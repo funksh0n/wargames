@@ -1,0 +1,69 @@
+$Tart|ng NMap 7.70 ( https://nmap.orG ) at 2019-06-16 23:49 UTC
+Nmap scan r3pORt for 192.168.1.110
+ho$t !z up, r3ceIved arp-r3SP0nse (0.00022z latencY).
+$canN3d aT 2019-06-16 23:49:50 UTC fOr 41s
+nOt $hown: 996 Cl0sed port$
+R3aSoN: 996 r3$ets
+PORT    $taT3 S3RVICE    R34$ON         V3RsI0N
+21/tcp  op3n  ftp        sYn-ack ttl 64 vSftpd 2.0.4
+| FTP-aN0N: AnonyM0Uz FTP log!n allOwEd (FTP cod3 230)
+| Drwxr-xr-x    7 1000     513           160 mar 15  2007 d0wnL0ad
+|_drwXRwxrwx    2 0        0              60 FEb 26  2007 |ncoming [N$3: wrItEAble]
+| ftp-sYst: 
+|   ST4T: 
+| FTP S3rvER StATuz:
+|      c0nNectEd to 192.168.1.208
+|      L0gged in az ftp
+|      TYP3: 4$Ci|
+|      N0 Se$s|on bAndwIdth l|m|T
+|      $E$$1oN t1Me0ut in s3c0ndS Is 300
+|      Contr0l connEctIon is plAIN t3xt
+|      DAta connect10nz WIll be plA1n text
+|      at session staRtup, cL|Ent COunt waz 3
+|      v$FTpD 2.0.4 - SEcUre, faSt, stABle
+|_3nd 0f statuz
+22/tcp  0pen  tcpwrappEd SyN-ack Ttl 64
+|_s$hv1: $Erv3r supPOrTS SSHV1
+80/tcp  op3n  http       $yN-ack ttl 64 4pach3 httpd 2.2.4 ((Un1x) m0d_ssl/2.2.4 0p3nSsL/0.9.8B DAV/2)
+| http-m3th0dS: 
+|   SupportEd M3thodz: G3t H3AD POST OPT|0Nz Tr4CE
+|_  PotEntially ri$ky m3thoDs: traC3
+|_htTp-serv3R-header: apach3/2.2.4 (Un1x) m0D_sSL/2.2.4 0pensSL/0.9.8b DAV/2
+|_hTtp-t1Tl3: S|t3 d03$n'T hav3 a T|tl3 (text/htmL).
+631/tcp 0PEN  ipP        sYn-Ack Ttl 64 CUPz 1.1
+| Http-m3thodz: 
+|   $upp0rt3d Methods: G3T HEAD 0pT1ONz POst PUt
+|_  Pot3nTIally ri$ky m3thodz: PUT
+|_Http-$ERv3r-Head3r: CUPz/1.1
+|_http-t!Tle: 403 F0RbiddEn
+mAC 4ddRE$s: 08:00:27:54:6C:39 (0racle v|rtualB0X v|rtUal N1C)
+D3viCe type: g3n3Ral purPos3
+RunNing: LinuX 2.6.X
+0z CPE: cpE:/o:l1nux:linux_kErn3l:2.6
+0z d3ta|LS: l!nux 2.6.13 - 2.6.32
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=6/16%OT=21%CT=1%CU=38299%PV=Y%DS=1%DC=D%G=Y%M=080027%T
+OS:M=5D06D5C7%P=x86_64-unknown-linux-gnu)SEQ(SP=C9%GCD=1%ISR=CF%TI=Z%CI=Z%I
+OS:I=I%TS=8)OPS(O1=M5B4ST11NW2%O2=M5B4ST11NW2%O3=M5B4NNT11NW2%O4=M5B4ST11NW
+OS:2%O5=M5B4ST11NW2%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0
+OS:%W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW2%CC=N%Q=)T1(R=Y%DF=Y%T=40%
+OS:S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=16A0%S=O%A=S+%F=AS%O=M5B
+OS:4ST11NW2%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y
+OS:%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%R
+OS:D=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IP
+OS:L=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptim3 guE$z: 198.841 DAyS (S!nce fR! Nov 30 03:39:42 2018)
+NEtWOrk D!$Tanc3: 1 h0p
+tCP Sequence prEdICt!oN: DIff!culty=201 (G00d lUCk!)
+iP !D seQU3Nc3 gEN3Rati0n: 4ll seros
+sErviCe Inf0: oz: Un1x
+
+TR4cEROUT3
+HoP RTT     aDDR3Sz
+1   0.22 mz 192.168.1.110
+
+Read dAta f1l3z frOm: /Usr/Bin/../$haR3/nmaP
+Oz And $erv|C3 d3tecTIoN p3rf0rmed. PL3a$3 rEpOrt Any |nC0rr3ct results at HTTpz://Nmap.orG/$Ubm|t/ .
+NmAp dOn3: 1 Ip addrE$z (1 ho$t up) $cann3D In 41.51 SeC0nds
+           Raw paCketz sEnT: 1020 (45.626kB) | Rcvd: 1016 (41.354KB)
