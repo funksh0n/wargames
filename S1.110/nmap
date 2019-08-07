@@ -1,0 +1,68 @@
+# Nmap 7.70 scan initiated Sun Jun 16 23:49:50 2019 as: nmap -A -oN nmap -oX nmap.xml -oS nmap.l33t -oG nmap.grep -vv 192.168.1.110
+Nmap scan report for 192.168.1.110
+Host is up, received arp-response (0.00022s latency).
+Scanned at 2019-06-16 23:49:50 UTC for 41s
+Not shown: 996 closed ports
+Reason: 996 resets
+PORT    STATE SERVICE    REASON         VERSION
+21/tcp  open  ftp        syn-ack ttl 64 vsftpd 2.0.4
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x    7 1000     513           160 Mar 15  2007 download
+|_drwxrwxrwx    2 0        0              60 Feb 26  2007 incoming [NSE: writeable]
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.1.208
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 2.0.4 - secure, fast, stable
+|_End of status
+22/tcp  open  tcpwrapped syn-ack ttl 64
+|_sshv1: Server supports SSHv1
+80/tcp  open  http       syn-ack ttl 64 Apache httpd 2.2.4 ((Unix) mod_ssl/2.2.4 OpenSSL/0.9.8b DAV/2)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.2.4 (Unix) mod_ssl/2.2.4 OpenSSL/0.9.8b DAV/2
+|_http-title: Site doesn't have a title (text/html).
+631/tcp open  ipp        syn-ack ttl 64 CUPS 1.1
+| http-methods: 
+|   Supported Methods: GET HEAD OPTIONS POST PUT
+|_  Potentially risky methods: PUT
+|_http-server-header: CUPS/1.1
+|_http-title: 403 Forbidden
+MAC Address: 08:00:27:54:6C:39 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.13 - 2.6.32
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=6/16%OT=21%CT=1%CU=38299%PV=Y%DS=1%DC=D%G=Y%M=080027%T
+OS:M=5D06D5C7%P=x86_64-unknown-linux-gnu)SEQ(SP=C9%GCD=1%ISR=CF%TI=Z%CI=Z%I
+OS:I=I%TS=8)OPS(O1=M5B4ST11NW2%O2=M5B4ST11NW2%O3=M5B4NNT11NW2%O4=M5B4ST11NW
+OS:2%O5=M5B4ST11NW2%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0
+OS:%W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW2%CC=N%Q=)T1(R=Y%DF=Y%T=40%
+OS:S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=16A0%S=O%A=S+%F=AS%O=M5B
+OS:4ST11NW2%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y
+OS:%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%R
+OS:D=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IP
+OS:L=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 198.841 days (since Fri Nov 30 03:39:42 2018)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=201 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.22 ms 192.168.1.110
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jun 16 23:50:31 2019 -- 1 IP address (1 host up) scanned in 41.51 seconds

