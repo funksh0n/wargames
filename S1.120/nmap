@@ -1,0 +1,35 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-04-09 04:26 BST
+Nmap scan report for 1ity (192.168.1.120)
+Host is up (0.00015s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        ProFTPD 1.3.2
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_dr-xr-xr-x   2 0        0              40 Jan  2  2011 incoming
+22/tcp   open  ssh        OpenSSH 5.1 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 c5:3d:06:0e:e8:f8:d7:14:c1:a7:e2:0c:b8:93:fa:9a (DSA)
+|_  2048 09:e0:bf:23:5e:17:19:77:cc:20:ea:b8:b5:a4:c2:a1 (RSA)
+80/tcp   open  http       Apache httpd 2.2.11 ((Unix) DAV/2 mod_ssl/2.2.11 OpenSSL/0.9.8k PHP/5.2.9 mod_apreq2-20051231/2.6.0 mod_perl/2.0.4 Perl/v5.10.0)
+|_http-server-header: Apache/2.2.11 (Unix) DAV/2 mod_ssl/2.2.11 OpenSSL/0.9.8k PHP/5.2.9 mod_apreq2-20051231/2.6.0 mod_perl/2.0.4 Perl/v5.10.0
+|_http-title: Primaline :: Quality Kitchen Accessories
+443/tcp  open  ssl/https?
+|_ssl-date: 2020-04-09T03:27:00+00:00; -1s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_IDEA_128_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|_    SSL2_RC2_128_CBC_WITH_MD5
+3306/tcp open  mysql      MySQL (unauthorized)
+Service Info: OS: Unix
+
+Host script results:
+|_clock-skew: -1s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 106.11 seconds

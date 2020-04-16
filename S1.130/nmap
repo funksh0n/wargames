@@ -1,0 +1,34 @@
+funksh0n@1ity:~/git/wargames/S1.130$ nmap -A 192.168.1.20
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-04-10 22:16 BST
+Nmap scan report for 192.168.1.20
+Host is up (0.00060s latency).
+Not shown: 992 filtered ports
+PORT    STATE  SERVICE  VERSION
+20/tcp  closed ftp-data
+21/tcp  open   ftp      vsftpd 2.0.4
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 500 OOPS: capset
+| ftp-syst: 
+|   STAT: 215
+|_UNIX Type: L8
+22/tcp  open   ssh      OpenSSH 4.3 (protocol 1.99)
+| ssh-hostkey: 
+|   2048 83:4f:8b:e9:ea:84:20:0d:3d:11:2b:f0:90:ca:79:1c (RSA1)
+|   2048 6f:db:a5:12:68:cd:ad:a9:9c:cd:1e:7b:97:1a:4c:9f (DSA)
+|_  2048 ab:ab:a8:ad:a2:f2:fd:c2:6f:05:99:69:40:54:ec:10 (RSA)
+|_sshv1: Server supports SSHv1
+25/tcp  open   smtp     Sendmail 8.13.7/8.13.7
+| smtp-commands: slax.example.net Hello [192.168.1.81], pleased to meet you, ENHANCEDSTATUSCODES, PIPELINING, 8BITMIME, SIZE, DSN, ETRN, AUTH DIGEST-MD5 CRAM-MD5, DELIVERBY, HELP, 
+|_ 2.0.0 This is sendmail version 8.13.7 2.0.0 Topics: 2.0.0 HELO EHLO MAIL RCPT DATA 2.0.0 RSET NOOP QUIT HELP VRFY 2.0.0 EXPN VERB ETRN DSN AUTH 2.0.0 STARTTLS 2.0.0 For more info use "HELP <topic>". 2.0.0 To report bugs in the implementation see 2.0.0 http://www.sendmail.org/email-addresses.html 2.0.0 For local information send email to Postmaster at your site. 2.0.0 End of HELP info 
+80/tcp  open   http     Apache httpd 2.0.55 ((Unix) PHP/5.1.2)
+|_http-server-header: Apache/2.0.55 (Unix) PHP/5.1.2
+|_http-title: Site doesn't have a title (text/html).
+110/tcp open   pop3     Openwall popa3d
+143/tcp open   imap     UW imapd 2004.357
+|_imap-capabilities: SCAN THREAD=ORDEREDSUBJECT LOGIN-REFERRALS SORT SASL-IR MAILBOX-REFERRALS THREAD=REFERENCES IDLE BINARY NAMESPACE STARTTLS CAPABILITY OK LITERAL+ IMAP4REV1 AUTH=LOGINA0001 completed UNSELECT MULTIAPPEND
+443/tcp closed https
+Service Info: Hosts: slax.example.net, 1ity; OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.53 seconds
+
