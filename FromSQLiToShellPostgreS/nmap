@@ -1,0 +1,16 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-04-17 12:15 BST
+Nmap scan report for 1ity (192.168.1.94)
+Host is up (0.00016s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze2 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 36:90:0e:5e:8e:b0:eb:49:58:92:e9:a8:cb:ac:13:46 (DSA)
+|_  2048 55:25:86:af:ce:22:0a:c4:e8:f1:75:a5:4a:cd:ae:9e (RSA)
+80/tcp open  http    Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: My Photoblog - last picture
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.36 seconds

