@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu May 14 18:49:23 2020 as: nmap -A -script vuln -oA nmap -Pn 10.10.35.179
+Host: 10.10.35.179 ()	Status: Up
+Host: 10.10.35.179 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: filtered (998)	Seq Index: 259	IP ID Seq: Incremental
+# Nmap done at Thu May 14 18:52:28 2020 -- 1 IP address (1 host up) scanned in 185.07 seconds
