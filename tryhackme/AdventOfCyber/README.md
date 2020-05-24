@@ -13,3 +13,6 @@ echo -n 'dXNlcm5hbWV2NGVyOWxsMSFzcw==' | base64 -d
 ```bash
 dirsearch -u http://10.10.77.202:3000/ -w /opt/wordlists/dirbuster/directory-list-2.3-small.txt -e html
 ```
+
+## Day 3
+Look for TELNET protocol to get shadow.  Crack buddy with hashcat. `$6$3GvJsNPG$ZrSFprHS13divBhlaKg1rYrYLJ7m1xsYRKxlLh0A1sUc/6SUd7UvekBOtSnSyBwk3vCDqBhrgxQpkdsNN6aYP1`
