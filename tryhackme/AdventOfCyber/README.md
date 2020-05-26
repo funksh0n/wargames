@@ -16,3 +16,10 @@ dirsearch -u http://10.10.77.202:3000/ -w /opt/wordlists/dirbuster/directory-lis
 
 ## Day 3
 Look for TELNET protocol to get shadow.  Crack buddy with hashcat. `$6$3GvJsNPG$ZrSFprHS13divBhlaKg1rYrYLJ7m1xsYRKxlLh0A1sUc/6SUd7UvekBOtSnSyBwk3vCDqBhrgxQpkdsNN6aYP1`
+
+
+## Day 4
+Search for IP (PCRE)
+```bash
+grep -P "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" file
+```
